@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+src/logs/
+src/session_memory.txt
+.DS_Store

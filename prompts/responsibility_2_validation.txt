@@ -1,0 +1,4 @@
+Is the following user message a question? Answer only with "Yes" or "No".
+
+User message
+"{query}"

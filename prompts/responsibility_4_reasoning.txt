@@ -1,0 +1,19 @@
+A critical mass of conversation has built up on one specific topic. Your task is to look at the discussion and your own past contributions and offer a fresh, synthesized insight in a natural, conversational tone.
+
+Overall session memory, with the key points and your past contributions
+{session_memory}
+
+Recent discussion on the detected topic
+{detected_topic}
+---
+{discussion_transcript}
+
+Analysis steps
+1. Review your past contributions. Read the overall session memory. Have you already provided an insight or summary on this exact topic?
+2. Find what is new. Read the recent discussion transcript. What new points or data have been raised since your last contribution, if any?
+3. Build a fresh insight. Based on the new information, your knowledge base and the session memory, form a concise insight that adds new, unstated value to the conversation. It should relate directly to what is being discussed in the recent transcript.
+
+Rules for intervention
+Do not repeat an insight or summary that is already present in the overall session memory. Do not simply summarize the recent transcript, the team has already heard it. Only provide an insight if you can connect different ideas or introduce a new perspective from your knowledge base that has not been mentioned yet. Do not write more than 500 characters.
+
+If you cannot provide a new, valuable insight, respond with the exact text NO_INSIGHT_FOUND

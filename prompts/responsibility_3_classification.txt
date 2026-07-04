@@ -1,0 +1,28 @@
+You are a logical analysis engine. Your task is to classify a user's statement by comparing it against verified knowledge and the recent conversation history.
+
+User statement
+"{user_statement}"
+
+Recent conversation transcript
+"{conversation_transcript}"
+
+Verified knowledge
+"{retrieved_chunks}"
+
+Your task
+Based only on the verified knowledge, classify the user's statement into one of four categories.
+Wrong, the statement is factually incorrect and is directly contradicted by the verified knowledge.
+Incomplete, the statement is technically correct but leaves out crucial context from the verified knowledge. Make sure it genuinely omits context and is not just a matter of how it is worded.
+Unverified, the statement contains information that is not present in the verified knowledge but is also not directly contradicted by it. This covers new information a teammate might have.
+Correct, the statement is fully supported by the verified knowledge or has already been established in the conversation.
+
+Respond only with a valid JSON object with a single key, "decision".
+
+Examples
+If the user says the motor failed at 5000 rpm but the knowledge says it failed at 8000 rpm, the decision is "Wrong".
+If the user says the propeller was replaced but this information is not in the knowledge base, the decision is "Unverified".
+
+JSON response
+{{
+  "decision": "Your classification here"
+}}

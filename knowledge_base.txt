@@ -1,0 +1,147 @@
+Aerodynamic Design
+Overall Configuration: A conventional fixed-wing configuration was chosen, featuring a high aspect ratio wing to minimize induced drag, combined with a V-tail configuration and rear positioned propeller.
+Fuselage Design: The fuselage has a streamlined, low-frontal-area profile. The integration of the underside camera turret introduced a necessary aerodynamic disruption. 
+Landing Gear: A fixed, aerodynamically faired tricycle landing gear was chosen for simplicity, reliability and weight reduction. It’s unclear how much this will increase drag.
+Thermal Management: to cool down the battery pack and small electronic components, a small duct was designed, which can also be covered if cold weather is expected. 
+
+Structural Design and Materials
+Primary Structure: The fuselage, wings, and tail assembly are constructed from Carbon Fiber Reinforced Polymer (CFRP) composites. 
+High-Stress Components: Most critical moving parts, such as control surface hinges and the payload gimbal, are machined from Aluminum 7075-T6.
+Propeller: 3D printed high-strength ABS, allowing for replacements to be rapidly executed on the field.
+Battery Pack casing: Polyamide with rubber supports to protect from vibrations.
+
+Propulsion Components Selection 
+Motor: A Brushless DC (BLDC) Outrunner motor was chosen. Its outrunner configuration provides the high torque needed to efficiently spin a large-diameter propeller at lower RPMs, ideal for endurance.
+Electronic Speed Controller (ESC): A high-performance ESC manages the motor, providing critical telemetry data, including voltage, current, and temperature.
+Battery Pack: A Lithium Polymer (LiPo) battery with a 40,000 mAh capacity was designed to meet the endurance target with a 30min surplus. 
+
+Structural Bench Testing 
+During static and dynamic load testing, the airframe was subjected to its design limit loads and vibration tests, which led to several modifications. A 3 cm fuselage crack found at 95% of the limit load necessitated a 300g structural reinforcement. The 3D-printed propeller showed fatigue cracks and was replaced with a more durable carbon fiber version. Finally, the battery cooling ducts were redesigned to simplify manufacturing.
+
+Wind Tunnel Testing
+An aerodynamics campaign using a scale model validated the CFD predictions, confirming the aircraft's handling was within expectations, though the landing gear showed more flow disturbance than simulated.
+Separately, the original cooling system (before structural changes) was tested with the full-scale propulsion system at 30°C. While the motor performed as expected, a thermal issue was identified: during a 1-hour simulated cruise, the battery's temperature rose to 45°C, 25% higher than predicted.
+
+Propulsion System Bench Testing
+During the electric propulsion system testing it was observed that the carbon fiber propeller produced about 3% less static thrust than a 3D printed version at the same power. At the predicted cruise thrust setting, the system drew approximately 460W at 6000 rpm, resulting in an estimated endurance of 3 hours and 10 minutes.
+
+Flight Testing
+The team could only do one testing session, spending a battery worth of testing, in the following conditions:
+Ambient temperature at ground level: ~ 20 °CS
+Wind: Up to 5m/s, no precipitation and no clouds.
+Payload: electro-Optical/Infrared (EO/IR) camera turret weighting 1.85kg. 
+Aircraft Specs Comparison: Empty weight - Design Target: 17.96 Kg, Measured: 18.45 Kg (increase of 0.49 Kg or 2.7%) 
+Gross weight - Measured: 20.30 Kg 
+Length - Design Target: 1.85m, Measured: 1.85m (no change) 
+Wingspan - Design Target: 3.42m, Measured: 3.43m (increase of 0.01m)
+
+The flight plan integrated multiple test objectives, with 4 steps:
+Run 1: Handling Checks (20 min)
+The UAV showed predictable and responsive handling. A slight left yaw was observed, which was traced to a minor wing defect and corrected before the next run. All systems and temperatures were nominal.
+Run 2: Maximum Speed Validation (10 min)
+The aircraft achieved its predicted maximum speed and remained stable. However, the pilot noted the throttle response became slightly sluggish on the final high-speed pass. Telemetry confirmed spikes in power draw, and battery and motor temperatures rose and were slower to return to baseline than expected.
+Run 3: Climb/Descent Assessment (15 min)
+Initial climb performance was strong and matched predictions. However, subsequent climbs felt less energetic and required noticeably more throttle input to achieve the same ascent rate, suggesting a decrease in system efficiency.
+Run 4: Endurance Cruise (95 min)
+Significant performance degradation was observed during the long-duration cruise. After about 50 minutes, the pilot reported the UAV required progressively more throttle to maintain speed. Upon landing, the battery casing and avionics bay were significantly hotter than anticipated, confirming telemetry data that showed a sustained rise in component temperatures and a clear degradation in system efficiency.
+
+
+Comparison of Predicted vs. Observed Performance Parameters:
+PERFORMANCE COMPARISON: PREDICTED vs OBSERVED
+Maximum Speed: Predicted 44 m/s, Observed 42.4 m/s (3.6% decrease) Electrical Power input at maximum speed: Predicted 3000 W, Observed: 2948W (1.7% decrease) 
+Current at maximum speed: Predicted: 80A, Observed: 79A (1.3% decrease) 
+Maximum RPM: Predicted 15000 rpm, Observed 14970 rpm (0.2% decrease) 
+Maximum climbing rate: Predicted 9.4 m/s, Observed 9.2 m/s (2.1% decrease)
+Average electrical power input at cruise speed: Predicted 460W, Observed: 620 W (34.8% INCREASE) 
+Current at cruise speed: Predicted 13 A, Observed 17.5 A (34.6% INCREASE) 
+Motor rpm at cruise: Predicted 6000 rpm, Observed 6120 rpm (2.0% increase) 
+Endurance: Predicted 3h 10min, Observed approximately 2h 20min (50 minutes SHORT, 26.3% decrease)
+A clear discrepancy of electrical power and current at cruise speed was observed, which means the battery was discharging at a much faster rate than predicted.
+
+
+Graph: UAV Flight Profile Telemetry (Altitude/Speed vs. Time) This graph shows the flight plan executed in Run 4.
+Y-Axis (Left): Represents Altitude in meters (m), corresponding to the solid blue line. The scale ranges from 0 to over 3000 m.
+Y-Axis (Right): Represents Speed in meters per second (m/s), corresponding to the green (True Airspeed) and purple (Ground Speed) lines. The scale ranges from 0 to over 40 m/s.
+X-Axis: Represents Flight Time in minutes.
+The graph shows a flight profile broken into several distinct phases:
+1.Initial Climb (Time 0 to 4 minutes):
+Altitude (Blue): The aircraft climbs rapidly and steadily from 0 m to 2000 m.
+Speeds (Green/Purple): Both True Airspeed (TAS) and Ground Speed increase quickly from 0 m/s and stabilize around 22 m/s during the climb.
+2.First Cruise (Time 4 to 40 minutes):
+Altitude (Blue): The aircraft maintains a constant altitude of 2000 m for approximately 36 minutes.
+Speeds (Green/Purple): The True Airspeed (TAS) is very stable, holding steady at approximately 22 m/s (79 km/h). The Ground Speed (purple) fluctuates slightly above and below the TAS, indicating minor variations from wind.
+3.Second Climb (Time 40 to 42 minutes):
+Altitude (Blue): The aircraft executes a second, rapid climb from 2000 m to 3000 m3.
+Speeds (Green/Purple): During this brief climb, the speeds remain relatively consistent.
+4.Second Cruise (Time 42 to 80 minutes):
+Altitude (Blue): The aircraft maintains a constant altitude of 3000 m for about 38 minutes.
+Speeds (Green/Purple): The TAS remains steady at approximately 22 m/s. The Ground Speed continues to fluctuate around the TAS.
+5.Descent (Time $\approx$ 80 to 95 minutes):
+Altitude (Blue): The aircraft performs a rapid, steep descent from 3000 m back to 0 m.
+Speeds (Green/Purple): There is a sharp spike in both TAS and Ground Speed, peaking at approximately 42-43 m/s as the UAV performs a descent. In the last couple minutes, the speeds decrease in preparation for landing.
+Motor RPM (Orange): Drops to near-zero.
+SoC (Purple): The line becomes nearly flat, indicating minimal power consumption as the UAV glides or descends with low power.
+In summary, this graph visually confirms the tabular data: the power required for cruise flight (520-700 W) is significantly higher than the predicted 460 W. This high cruise power consumption is the direct cause of the rapid battery depletion (the slope of the SoC line) and, consequently, the failure to meet the endurance target.
+
+Graph: Motor RPM, Electric Power and Battery SOC over Flight Time during Run 4
+This graph illustrates the performance of the drone's power system over the 95-minute flight. It plots three variables against flight time:
+Y-Axis (Left): "Electrical Power (W)" (solid red line)
+Y-Axis (Right): This is a dual-axis:
+"Motor RPM" (dashed orange line)
+"SoC (%)" (State of Charge, or battery percentage) (dashed purple line)
+X-Axis: "Flight Time (minutes)
+The graph shows a clear correlation between the different phases of flight (as seen in the "Flight Profile" graph) and the propulsion system's response:
+1.Initial Climb (Time 0 to 4 minutes):
+Electrical Power (Red): Jumps immediately from zero to a high, steady draw of approximately 2,100 W.
+Motor RPM (Orange): Spikes to its maximum of 10,000 RPM and holds there.
+SoC (Purple): Begins a steep, linear decline, indicating a high rate of battery drain. (Note: The graph shows the battery starting at 60% SoC because this data is from "Run 4," after previous test runs had already used 40% of the battery).
+2.First Cruise (Time 4 to 40 minutes):
+Electrical Power (Red): Drops sharply to a steady state of approximately 520 W.
+Motor RPM (Orange): Drops and stabilizes at approximately 6100 RPM.
+SoC (Purple): The slope of the line becomes much shallower, indicating a significantly reduced (but constant) rate of battery drain during cruise.
+3.Second Climb (Time 40 to 42 minutes):
+Electrical Power (Red): Spikes back up to 2,700 W, steadily increasing to 3000W during the climb.
+Motor RPM (Orange): Jumps back up to 10,000 RPM.
+SoC (Purple): The rate of discharge (slope) becomes steep again, matching the first climb.
+4.Second Cruise (Time 42 to 80 minutes):
+Electrical Power (Red): Drops back down, but to a slightly higher level than the first cruise, averaging 700 W.
+Motor RPM (Orange): Stabilizes at 6100rpm
+SoC (Purple): Resumes its shallower, linear decline, but at a slightly faster rate than the first cruise, corresponding to the higher power draw.
+5.High-Speed Dash (Time $\approx$ 80 to 82 minutes):
+Electrical Power (Red): Spikes to its absolute peak of 3,000 W.
+Motor RPM (Orange): Briefly peaks again at 10,000 RPM.
+SoC (Purple): Shows its steepest drop, reflecting the maximum power draw from the battery.
+6.Descent (Time $\approx$ 82 minutes onwards):
+Electrical Power (Red): Drops to near-zero as the motor is throttled down for descent.
+Motor RPM (Orange): Drops to near-zero.
+SoC (Purple): The line becomes nearly flat, indicating minimal power consumption as the UAV glides or descends with low power.
+In summary, this graph visually confirms the tabular data: the power required for cruise flight (520-700 W) is significantly higher than the predicted 460 W. This high cruise power consumption is the direct cause of the rapid battery depletion (the slope of the SoC line) and, consequently, the failure to meet the endurance target.
+
+
+
+Graph: Ambient, Motor and Battery Temperature over Flight Time during Run 4
+This graph plots the temperatures of key components and the environment over the 95-minute flight. The battery overheated compared to what would be expected.
+Y-Axis: "Temperature ($\text{^oC}$)", with a scale from 0 to 140.
+X-Axis: "Flight Time (minutes)".
+This graph's data is critical and shows a severe thermal management problem, which correlates directly with the power and flight profile graphs:
+1.Ground & Initial Climb (Time 0 to 4 minutes):
+Ambient (Light Blue): Starts at a ground temperature of 25C and drops quickly to 12C as the UAV climbs.
+Motor (Red): Rises extremely rapidly from the ambient 25C to over 90C, driven by the high power draw of the climb.
+Battery (Green): Also rises sharply, from 25C to 52C.
+2.First Cruise (Time 4 to 40 minutes):
+Ambient (Light Blue): Stays constant at 12C (at 2000m altitude).
+Motor (Red): Despite the reduced power and cold ambient air, the motor temperature does not stabilize. It continues to climb steadily from 92C to 110C, indicating it cannot dissipate the heat it's generating.
+Battery (Green): Stabilizes at a high temperature of 53-54C.
+3.Second Climb (Time 40 to 42 minutes):
+Ambient (Light Blue): Drops again from 12C to 5C as the UAV climbs to 3000m.
+Motor (Red): Spikes violently in response to the high power draw, jumping from 110C to a critical peak 138C. 
+Battery (Green): Jumps from 54C to 66-67C.
+4.Second Cruise (Time 42 to 80 minutes):
+Ambient (Light Blue): Stays constant at 5C.
+Motor (Red): Begins to cool very slowly, reaching 125C by the 80min mark, but remains at an extremely high temperature.
+Battery (Green): Remains quite stable at its new, decreasing only 2-3C
+5.Descent (Time 80 minutes onwards):
+Ambient (Light Blue): Rises as the UAV descends.
+Motor (Red) & Battery (Green): With propulsion power cut, both components finally begin to cool down at a much faster rate.
+
+

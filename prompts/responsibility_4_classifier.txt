@@ -1,0 +1,24 @@
+Active topics
+These topics are currently active in the conversation history.
+[{active_topics_list}]
+
+Transcript to classify
+{indexed_transcript}
+
+Your task
+You are a technical conversation tracker. For each message in the transcript, work out its main technical topic.
+
+Rules for classification
+1. Prefer active topics. If a message fits one of the active topics listed above, you must use that exact existing label and not create a synonym. For example, if Motor Overheating is active and someone says the engine is too hot, classify it as Motor Overheating.
+2. New topics. Only create a new label when a message brings up a clearly new subject that is not listed above. Use standard, concise engineering terms of one to three words.
+3. Filter noise. If a message is non technical, simple agreement, a short acknowledgment or chit chat, for example ok, sure, I agree, let's do that, thanks, classify it as "Irrelevant".
+
+Output format
+Respond only with a valid JSON object that maps the message index to the topic.
+
+Example
+{{
+  "1": "Motor Overheating",
+  "2": "Irrelevant",
+  "3": "Motor Overheating"
+}}

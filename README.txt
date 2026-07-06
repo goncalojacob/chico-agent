@@ -23,3 +23,6 @@ If you use this code, please cite:
 [Author]. (2026). Impact of Agent Proactive Behaviours on Collaboration in
 Aerospace Human-Autonomy Teams. Master's thesis, Instituto Superior Técnico.
 ```
+
+Handouts
+The handouts pdf contain the information given to each role prior to completing the task.

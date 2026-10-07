@@ -1,0 +1,18 @@
+session,start_timestamp,end_timestamp,duration_minutes,F1_The_motor_is_designed_to_be_cooled_by_he,F2_A_layer_of_silicone_foam_insulation_is_u,F3_The_motor_is_overheating_OR_the_motor_is,F4_Motor_efficiency_decreases__with_tempera,R1_Motor_overheating_identified_as_main_issue,R2_Overheating_caused_by_silicone_foam_isolation,F1_The_motor_is_designed_to_be_cooled_by_he.1,F2_A_layer_of_silicone_foam_insulation_is_u.1,F3_The_motor_is_overheating_OR_the_motor_is.1,F4_Motor_efficiency_decreases__with_tempera.1,R1_Motor_overheating_identified_as_main_issue.1,R2_Overheating_caused_by_silicone_foam_isolation.1
+Session_01,18:58:08,19:38:06,39.97,Not found,Not found,19:03:14,Not found,No,No,,,Partial,,,
+Session_02,14:29:44,15:13:59,44.25,Not found,Not found,14:59:45,Not found,No,No,,,Partial,,,
+Session_03,17:52:04,18:20:12,28.13,18:08:50,Not found,17:59:09,Not found,No,No,,,,,,
+Session_04,19:29:59,20:14:50,44.86,Not found,Not found,20:07:36,Not found,No,No,,,Partial,,,
+Session_05,21:00:42,21:46:14,45.53,21:10:51,21:33:34,21:01:50,Not found,Yes,Yes,,,,,,
+Session_06,15:30:17,16:17:06,46.82,Not found,15:52:20,Not found,Not found,Yes,No,,,,,,
+Session_07,15:30:19,16:16:25,46.11,Not found,16:07:47,15:34:52,Not found,Yes,No,,,,,Partial,
+Session_08,16:58:43,17:44:19,45.6,Not found,Not found,17:31:27,Not found,No,No,,,,,,
+Session_09,19:37:09,20:13:39,36.5,Not found,Not found,19:47:25,Not found,No,No,,,,,,
+Session_10,20:53:34,21:38:44,45.16,Not found,Not found, 21:09:05,Not found,No,No,,,,,,
+Session_11,17:31:20,18:14:04,42.74,Not found,Not found,17:42:52,Not found,No,No,,,,,,
+Session_12,17:31:22,18:13:08,41.78,Not found,17:53:39,17:52:22,Not found,Yes,Yes,,,,,,
+Session_13,17:31:01,18:12:23,41.36,Not found,17:43:34,Not found,Not found,No,No,,,,,,
+Session_14,17:31:02,18:15:56,44.9,Not found,Not found,17:50:16,Not found,Yes,No,,,,,,
+Session_15,17:31:03,18:16:34,45.52,Not found,Not found,17:36:14,Not found,Yes,No,,,,,,
+Session_16,18:26:59,19:12:54,45.92,Not found,18:48:45,18:53:06,Not found,No,No,,,,,,Partial
+Session_17,17:24:18,18:04:57,40.65,Not found,17:52:29,17:36:41,17:36:34,Yes,Yes,,,,,,

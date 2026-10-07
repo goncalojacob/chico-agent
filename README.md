@@ -83,3 +83,7 @@ Jacob, G. (2026). Impact of Agent Proactive Behaviours on Collaboration in
 Aerospace Human-Autonomy Teams. MSc thesis, Instituto Superior Técnico,
 Universidade de Lisboa.
 ```
+
+## Data
+
+`data/` holds the anonymised per-session and per-member measures behind every figure and statistic in the paper (session totals, per-member communication and network measures, questionnaire scale scores, decision-quality codes, function activations), with a README that documents each file and the conventions. No message text is included: the transcripts and the individual questionnaire responses are personal data held under the participants' consent and are not shared. Note that `function_activation_stats.csv` uses the code's function numbering, not the paper's (see above).
